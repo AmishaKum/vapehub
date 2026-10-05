@@ -26,7 +26,7 @@ img{max-width:100%;display:block}
 .burger span{display:block;height:2px;background:var(--ink);margin:7px 0}
 
 /* HERO */
-.hero{display:grid;place-items:center;text-align:center;padding:8rem 5vw 4rem;background:radial-gradient(circle at 50% 0%,#e9e0fd 0,#dbe8f8 55%,#eef3fb 100%)}
+.hero{display:grid;place-items:center;text-align:center;padding:5rem 5vw 4rem;background:radial-gradient(circle at 50% 0%,#e9e0fd 0,#dbe8f8 55%,#eef3fb 100%)}
 .hero-copy{min-width:0}
 .hero h1{font-size:clamp(2.6rem,6vw,5.4rem);line-height:1}
 .hero .punch,.hero .lead{margin-inline:auto}
