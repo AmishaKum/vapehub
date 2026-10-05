@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Vape Hub</title>
+<meta name="description" content="The Vape Hub: your local vaporizer store at 1281 West Pueblo Blvd, Pueblo, CO 81004." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<header class="nav" id="nav">
+  <a href="/" class="logo"><span class="logo-mark">▲</span> THE VAPE HUB</a>
+  <nav class="menu" id="menu">
+    <a href="/" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="btn btn-primary nav-cta">Contact us</a>
+  <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span></button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">1281 W Pueblo Blvd · Pueblo, CO</p>
+      <h1><span class="line"><span>Flavor you can feel.</span></span><span class="line accent"><span>Clouds you'll remember.</span></span></h1>
+      <p class="punch">Pueblo's go-to spot for smooth, ice-cold flavor.</p>
+      <p class="lead">Hand-picked devices, real advice from people who vape, and a shelf stocked with the flavors everyone asks for. Walk in curious, walk out with your new favorite.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">View Products</a>
+        <a href="#about" class="btn btn-ghost">About Us</a>
+      </div>
+      <ul class="hero-stats">
+        <li><b>50,000</b><span>puffs per device</span></li>
+        <li><b>6+</b><span>ice-cold flavors</span></li>
+        <li><b>Type-C</b><span>rechargeable</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Scroll-scrubbed product film -->
+  <section class="film" id="film">
+    <div class="film-stage">
+      <video id="filmVideo" muted playsinline preload="auto"><source src="/media/film.webm" type="video/webm" /><source src="/media/film.mp4" type="video/mp4" /></video>
+      <div class="film-shade"></div>
+      <div class="captions">
+        <div class="cap" data-start="0" data-end="0.167"><p class="k">Meet the lineup</p><h2>Small pod.<br>Huge flavor.</h2></div>
+        <div class="cap" data-start="0.167" data-end="0.295"><p class="k">Mango Ice</p><h2>Summer in<br>every pull.</h2></div>
+        <div class="cap" data-start="0.295" data-end="0.52"><p class="k">Lush Ice</p><h2>Watermelon,<br>chilled right.</h2></div>
+        <div class="cap" data-start="0.52" data-end="0.605"><p class="k">Peach Ice</p><h2>Soft. Sweet.<br>Frosty.</h2></div>
+        <div class="cap" data-start="0.605" data-end="0.83"><p class="k">Blue Razz Ice</p><h2>Bold berries,<br>no filter.</h2></div>
+      </div>
+      <div class="finale" id="finale">
+        <img src="/media/mangofx.jpg" alt="" class="fx-bg" />
+        <div class="fx-copy">
+          <p class="fx-num"><span id="puffNum">0</span></p>
+          <p class="fx-unit">Puffs</p>
+          <p class="fx-sub">Disposable vape · Rechargeable · Ice-cold flavor</p>
+        </div>
+      </div>
+      <div class="film-progress"><span id="filmBar"></span></div>
+    </div>
+  </section>
+
+  <section class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Flavor that hits different</span><span>✦</span><span>Ice-cold, every time</span><span>✦</span><span>Switch smarter</span><span>✦</span><span>Locally loved in Pueblo</span><span>✦</span>
+      <span>Flavor that hits different</span><span>✦</span><span>Ice-cold, every time</span><span>✦</span><span>Switch smarter</span><span>✦</span><span>Locally loved in Pueblo</span><span>✦</span>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="section-head">
+      <p class="eyebrow">Fresh on the shelf</p>
+      <h2>Pick your flavor. Own your cloud.</h2>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <section class="offer" id="offer">
+    <div class="section-head">
+      <p class="eyebrow">What we offer</p>
+      <h2>Everything you need, under one roof.</h2>
+    </div>
+    <div class="offer-grid">
+      <div class="offer-card" style="--t:#ffb347"><span class="ico">◆</span><h3>Disposable vapes</h3><p>Up to 50,000 puffs in dozens of flavors. Grab and go.</p></div>
+      <div class="offer-card" style="--t:#8a5cf6"><span class="ico">◈</span><h3>Pod systems</h3><p>Refillable kits for a smoother, cheaper long-term setup.</p></div>
+      <div class="offer-card" style="--t:#ff6f91"><span class="ico">●</span><h3>E-liquids &amp; salts</h3><p>Freebase and nic salt juices, from fruity to menthol.</p></div>
+      <div class="offer-card" style="--t:#2f7fd1"><span class="ico">✦</span><h3>Coils &amp; accessories</h3><p>Coils, pods, chargers and batteries for the devices you own.</p></div>
+      <div class="offer-card" style="--t:#14b88a"><span class="ico">▲</span><h3>Switching help</h3><p>Moving off cigarettes? We'll match a device and strength to you.</p></div>
+      <div class="offer-card" style="--t:#f2a65a"><span class="ico">★</span><h3>Fresh weekly drops</h3><p>New flavors land on the shelf every week. Ask what's new.</p></div>
+    </div>
+  </section>
+
+  <section class="why" id="about">
+    <div class="why-head">
+      <p class="eyebrow light">Why choose us</p>
+      <h2>Pueblo's vape shop that actually listens.</h2>
+      <p>We're locals serving locals. No pressure, no guesswork, just the right gear and honest advice.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><b>01</b><h3>Curated, not crowded</h3><p>Only devices we'd use ourselves make the shelf.</p></div>
+      <div class="why-card"><b>02</b><h3>Real talk, real help</h3><p>Switching or upgrading? Our team walks you through it.</p></div>
+      <div class="why-card"><b>03</b><h3>Authentic products</h3><p>Sourced from trusted brands. No knock-offs, ever.</p></div>
+      <div class="why-card"><b>04</b><h3>Fair, local prices</h3><p>Competitive pricing and deals for our regulars.</p></div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <h2>Drop in. Breathe easy.</h2>
+    <p>1281 West Pueblo Boulevard, Pueblo, CO 81004</p>
+    <form id="newsForm" class="news">
+      <input id="newsEmail" type="email" name="email" placeholder="Your email for new drops" required />
+      <button class="btn btn-primary" type="submit">Notify me</button>
+    </form>
+    <p class="form-msg" id="formMsg" aria-live="polite"></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> The Vape Hub · Pueblo, CO</p>
+  <p class="warn">WARNING: This product contains nicotine. Nicotine is an addictive chemical.</p>
+</footer>
+
+<script src="/vendor/gsap/gsap.min.js"></script>
+<script src="/vendor/gsap/ScrollTrigger.min.js"></script>
+<script src="/vendor/motion/motion.js"></script>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>
